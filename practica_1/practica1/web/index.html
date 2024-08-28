@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- AWP_In_Variable Name='"Web_Server"."Derecha"' -->
+    <!-- AWP_In_Variable Name='"Web_Server"."Izquierda"' -->
+    <!-- AWP_In_Variable Name='"Web_Server"."limite_arranque"' -->
+	<!-- AWP_In_Variable Name='"VariableMarca"' -->
+	<!-- AWP_In_Variable Name='"Web_Server"."Variable2"' -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="/styles.css" type="text/css" media="screen and (max-width: 600px)">
+
+    <title>Web Server P1</title>
+</head>
+<body>
+
+    <h1>Web server práctica 1</h1>
+    <h2>Comunicaciones Industriales</h2>
+    <h3>Facultad de ingeniería - Universidad de Antioquia</h3>
+
+    <form method="post" action="/awp/index.html">
+        <h2>Dirección del motor</h2>
+        <input type="submit" value="Derecha">
+    	<input type="hidden" name='"Web_Server"."Derecha"' value="1">
+
+        <input type="submit" value="Izquierda">
+    	<input type="hidden" name='"Web_Server"."Izquierda"' value="1">
+    </form>
+    <form method="post" action="/awp/index.html">
+        <h2>Número máximo de arranques</h2>
+        <input name='"Web_Server"."limite_arranque"' type="number">
+	    <input value= "Escribir" type="submit" name="Button1">
+
+    </form>
+    <p>
+        El número de arranques actual es:="Web_Server"."Cuenta"
+        El número de arranques máximo es:="Web_Server"."limite_arranque" 
+    </p>
+
+    <form>
+        <input type="submit" value="Reiniciar Conteo">
+    	<input type="hidden" name='"Web_Server"."Reiniciar"' value="1">
+    </form>
+    <h3>Paro de emergencia activo:</h3>
+
+
+    
+</body>
+</html>

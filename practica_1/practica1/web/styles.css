@@ -1,0 +1,13 @@
+*{
+    border: 5px solid red;
+}
+h1{
+    background-color: gray;
+    text-align: center;
+    border: 5px solid red;
+}
+
+form{
+    text-align: center;
+}
+
